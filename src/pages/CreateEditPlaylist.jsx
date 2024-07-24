@@ -32,7 +32,7 @@ const CreateEditPlaylist = () => {
         try {
           dispatch(showLoading());
           const response = await axios.post(
-            "http://localhost:5000/api/songs/add-playlist",
+            "music-app-backend-6rba.onrender.com/api/songs/add-playlist",
             {
               name,
               songs: selectedSongs,
@@ -67,7 +67,7 @@ const CreateEditPlaylist = () => {
         try {
           dispatch(showLoading());
           const response = await axios.post(
-            "http://localhost:5000/api/songs/update-playlist",
+            "music-app-backend-6rba.onrender.com/api/songs/update-playlist",
             {
               name,
               songs: selectedSongs,

@@ -17,7 +17,7 @@ const Register = () => {
     const register = async()=>{
         try {
             dispatch(showLoading());
-            const response = await axios.post('http://localhost:5000/api/register', user);
+            const response = await axios.post('music-app-backend-6rba.onrender.com/api/register', user);
             dispatch(hideLoading());
             if(response.data.success){
                 toast.success('Registered Successfully!');

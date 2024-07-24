@@ -38,7 +38,7 @@ const AddEditSong = () => {
       Object.keys(song).forEach((key) => {
         formData.append(key, song[key]);
       });
-      const response = await axios.post("http://localhost:5000/api/admin/add-songs", formData, {
+      const response = await axios.post("music-app-backend-6rba.onrender.com/api/admin/add-songs", formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -65,7 +65,7 @@ const AddEditSong = () => {
         formData.append(key, song[key]);
       });
       formData.append("_id", songId);
-      const response = await axios.post("http://localhost:5000/api/admin/edit-song", formData, {
+      const response = await axios.post("music-app-backend-6rba.onrender.com/api/admin/edit-song", formData, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

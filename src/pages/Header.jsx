@@ -18,7 +18,7 @@ const Header = () => {
             try {
                 dispatch(showLoading());
                 const token = localStorage.getItem("token");
-                const response = await axios.get(`http://localhost:5000/api/getuserdata`, {
+                const response = await axios.get(`music-app-backend-6rba.onrender.com/api/getuserdata`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
