@@ -16,7 +16,7 @@ const Login = () => {
     const login =async()=>{
         try {
             dispatch(showLoading());
-            const response = await axios.post ('music-app-backend-6rba.onrender.com/api/login',user)
+            const response = await axios.post ('https://music-app-backend-6rba.onrender.com/api/login',user)
             dispatch(hideLoading());
             if(response.data.success){
                 toast.success("Logged In Successfully");

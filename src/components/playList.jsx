@@ -143,7 +143,7 @@ const PlayList = () => {
         try {
             dispatch(showLoading());
             const response = await axios.post(
-                "music-app-backend-6rba.onrender.com/api/songs/delete-playlist",
+                "https://music-app-backend-6rba.onrender.com/api/songs/delete-playlist",
                 { name },
                 { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } }
             );

@@ -18,7 +18,7 @@ const Header = () => {
             try {
                 dispatch(showLoading());
                 const token = localStorage.getItem("token");
-                const response = await axios.get(`music-app-backend-6rba.onrender.com/api/getuserdata`, {
+                const response = await axios.get(`https://music-app-backend-6rba.onrender.com/api/getuserdata`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -47,7 +47,7 @@ const Header = () => {
     const getAllSongs = async ()=>{
                     try {
                         dispatch(showLoading())
-                        const response = await axios.get('http://localhost:5000/api/songs/get-all-songs', {
+                        const response = await axios.get('https://music-app-backend-6rba.onrender.com/api/songs/get-all-songs', {
                             headers: {
                                 Authorization: `Bearer ${localStorage.getItem("token")}`,
                             }
