@@ -42,7 +42,7 @@ const App = () => {
           />
           <Route path="/create-edit-playlist" element={<CreateEditPlaylist /> } />
           <Route path="/admin" element={<AdminHome />} />
-          <Route path="/admin/add-edit-song" element={<AddEditSong /> } />
+          <Route path="/add-edit-song" element={<AddEditSong /> } />
         </Routes>
       </BrowserRouter>
     </div> 

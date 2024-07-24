@@ -14,7 +14,7 @@ const AdminHome = () => {
     if(user)
     {
       if (user && !user.isAdmin)  {
-        navigate("/");
+        navigate("/admin");
       }
     }
   }, [user]);
@@ -30,10 +30,10 @@ const AdminHome = () => {
     <button
       className="text-white bg-warning py-2 px-5"
       onClick={() => {
-        navigate("/admin/add-edit-song");
+        navigate("/add-edit-song");
       }}
     >
-      Add Song
+      Add Music
     </button>
     <FontAwesomeIcon
             icon={faHome} // Use the home icon
